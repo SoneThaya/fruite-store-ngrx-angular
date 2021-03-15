@@ -14,12 +14,18 @@ import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, ProductComponent, ProductListComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    HeaderComponent,
+    ProductComponent,
+    ProductListComponent,
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
     StoreModule.forRoot({ shop: ShopReducer }),
-    EffectsModule.forRoot([ShopEffects])
+    EffectsModule.forRoot([ShopEffects]),
   ],
   providers: [],
   bootstrap: [AppComponent],
